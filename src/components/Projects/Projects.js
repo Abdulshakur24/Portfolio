@@ -18,7 +18,7 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 function SlideInWhenVisible({ children }) {
   return (
