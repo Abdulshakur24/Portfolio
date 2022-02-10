@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Accomplishments from "./components/Accomplishments/Accomplishments";
+import BgAnimation from "./components/BackgroundAnimation/BackgroundAnimation";
+import Hero from "./components/Hero/Hero";
+import Projects from "./components/Projects/Projects";
+import Technologies from "./components/Technologies/Technologies";
+import Timeline from "./components/TimeLine/TimeLine";
+import { Layout } from "./layout/Layout";
+import { HeroSection } from ".//styles/GlobalComponents";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <HeroSection>
+        <Hero />
+        <BgAnimation />
+      </HeroSection>
+      <Projects />
+      <Technologies />
+      <Timeline />
+      <Accomplishments />
+    </Layout>
   );
 }
 
