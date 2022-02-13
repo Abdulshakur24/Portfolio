@@ -10,7 +10,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template: 1fr / repeat(auto-fill, minmax(400px, 1fr));
   padding: 3rem;
   place-items: center;
   column-gap: 2rem;
@@ -79,7 +79,7 @@ export const UtilityList = styled.ul`
   padding: 0;
   display: flex;
   justify-content: space-around;
-  margin: 2.5rem 0;
+  padding: 2.5rem 0;
 `;
 
 export const ExternalLinks = styled.a`
