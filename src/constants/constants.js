@@ -92,7 +92,7 @@ export const sociallinks = [
     component: (index) => (
       <SocialIcons
         key={index}
-        href="https://www.linkedin.com/in/abdulshakur-abubakar-haji-96b846219/"
+        href="https://www.linkedin.com/in/abdulshakur-abubakar-96b846219/"
         target={"_blank"}
       >
         <AiFillLinkedin size="3rem" />
