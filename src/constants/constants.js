@@ -3,7 +3,7 @@ import { SocialIcons } from "../components/Header/HeaderStyles";
 
 export const info = {
   purpose:
-    "I'm a self-taught MERN/PERN Stack developer. I am currently exploring some of the advanced/guru projects. I love all things about front-end design/development and am looking for a job to take my passion to the next level! Feel free to give me a message or a follow! Contact Me",
+    "I'm a self-taught MERN/PERN Stack developer. I am currently exploring some of the advanced/guru projects. I love all things about front-end design/development and am looking for a job to take my passion to the next level!",
 };
 
 export const projects = [
@@ -61,7 +61,7 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2019, text: "Started my Front-end career." },
-  { year: 2020, text: "Decided to move to Full-stack Engineer." },
+  { year: 2020, text: "I decided to transit to Full-stack Engineer." },
   { year: 2021, text: "Started building ambigious projects." },
   { year: 2022, text: "Goals: Work as a freelancer, or remotely." },
 ];
