@@ -45,7 +45,7 @@ export const Div2 = styled(motion.div)`
 export const Div3 = styled(motion.div)`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
@@ -114,17 +114,19 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
     width: 15px;
   }
 `;
-
 // Social Icons
 
 export const SocialIcons = styled.a`
-  transition: 0.3s ease;
+  transition: 250ms ease;
   color: white;
-  border-radius: 50px;
-  padding: 8px;
+  border-radius: 100%;
+
+  &:nth-child(even) {
+    margin: 0 1rem;
+  }
+
   &:hover {
-    background-color: #212d45;
-    transform: scale(1.2);
+    transform: scale(1.15);
     cursor: pointer;
   }
 `;
