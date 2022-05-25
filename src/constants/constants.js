@@ -3,7 +3,7 @@ import { SocialIcons } from "../components/Header/HeaderStyles";
 
 export const info = {
   purpose:
-    "I am a conscientious person who works hard and pays attention to detail. I am flexible, quick to pick up new skills, and eager to learn from others. ",
+    "I'm a self-taught MERN/PERN Stack developer. I am currently exploring some of the advanced/guru projects. I love all things about front-end design/development and am looking for a job to take my passion to the next level! Feel free to give me a message or a follow! Contact Me",
 };
 
 export const projects = [
@@ -12,37 +12,27 @@ export const projects = [
     description:
       "This is a multi-page website that focuses on audio gear. It is made with PostgresSQL for the backend and can easily be scaled for more products.",
     image: require("../assets/audiophile.jpg"),
-    tags: ["React", "PostgreSQL", "NodeJS", "Express", "Passport JS"],
+    tags: ["ReactJS", "PostgreSQL", "NodeJS", "Express", "Passport JS"],
     source: "https://github.com/Abdulshakur24/audiophile",
     visit: "https://audiophile-by-ashakur.netlify.app/",
-    id: 0,
-  },
-  {
-    title: "Social Media",
-    description:
-      "A full-stack social media, where you can log in with google authentication and create your own feeds/pins!",
-    image: require("../assets/social.jpg"),
-    tags: ["React", "Tailwindcss", "Sanity"],
-    source: "https://github.com/Abdulshakur24/social-media",
-    visit: "https://social-media-by-ashakur.netlify.app/login",
     id: 1,
   },
-  // {
-  //   title: "Cryptocurrency",
-  //   description:
-  //     "A cryptocurrency tracker is a type of app that shows your real-time information on cryptocurrency prices.",
-  //   image: require("../assets/crypto.jpg"),
-  //   tags: ["React", "ChartJS", "React Redux"],
-  //   source: "https://github.com/Abdulshakur24/crtypo-app-react",
-  //   visit: "https://crypto-verse24.netlify.app/",
-  //   id: 2,
-  // },
+  {
+    title: "Space Tourism",
+    description:
+      "Created using React (and my most complex by far). I feel like I learned a hell of a lot working through it.",
+    image: require("../assets/space-tourism.jpg"),
+    tags: ["ReactJS", "Styled components", "Framer motion"],
+    source: "https://github.com/Abdulshakur24/space-tourism",
+    visit: "https://space-tourism-by-ashakur.netlify.app/",
+    id: 2,
+  },
   {
     title: "Reddit Client",
     description:
       "Reddit is a read-only web app client for Reddit Smooth reading experience on web browser.",
     image: require("../assets/reddit.jpg"),
-    tags: ["React", "React Redux"],
+    tags: ["ReactJS", "React Redux"],
     source: "https://github.com/Abdulshakur24/reddits-client",
     visit: "https://reddit-clients.netlify.app/",
     id: 3,
@@ -52,7 +42,7 @@ export const projects = [
     description:
       "A fully functional real estate web app uses an API that helps to query real estate in UAE.",
     image: require("../assets/realtor.jpg"),
-    tags: ["React", "NextJS", "Rapid APIs"],
+    tags: ["ReactJS", "NextJS", "Rapid APIs"],
     source: "https://github.com/Abdulshakur24/real-estate",
     visit: "https://real-estate-rouge.vercel.app/",
     id: 4,
@@ -60,9 +50,9 @@ export const projects = [
   {
     title: "Blog App",
     description:
-      "This Blog app allows you to post, edit, comment, save and view your blog posts.",
+      "This Blog site allows you to post, edit, comment, save and view your blog posts.",
     image: require("../assets/blog.jpg"),
-    tags: ["React", "NextJS", "Graphql"],
+    tags: ["ReactJS", "NextJS", "Graphql"],
     source: "https://github.com/Abdulshakur24/blog_app",
     visit: "https://blog-app-bice.vercel.app/",
     id: 5,
@@ -84,7 +74,7 @@ export const sociallinks = [
         href="https://github.com/Abdulshakur24"
         target={"_blank"}
       >
-        <AiFillGithub size="3rem" />
+        <AiFillGithub size="2rem" />
       </SocialIcons>
     ),
   },
@@ -95,7 +85,7 @@ export const sociallinks = [
         href="https://www.linkedin.com/in/abdulshakur-abubakar-96b846219/"
         target={"_blank"}
       >
-        <AiFillLinkedin size="3rem" />
+        <AiFillLinkedin size="2rem" />
       </SocialIcons>
     ),
   },
@@ -106,7 +96,7 @@ export const sociallinks = [
         href="https://www.instagram.com/abdulshakur_24/"
         target={"_blank"}
       >
-        <AiFillInstagram size="3rem" />
+        <AiFillInstagram size="2rem" />
       </SocialIcons>
     ),
   },
@@ -126,7 +116,7 @@ export const aboutMe = {
     "My name is Abdulshakur, I am a Full-stack Engineer(PERN Stack). This portfolio represents a few things that inspire me about my works.",
 };
 
-export const achievements = [{ number: 20, text: "Open Source Projects" }];
+export const achievements = [{ number: 20, text: "Repositories" }];
 
 export const contacts = {
   tel: "+254 707049885",
