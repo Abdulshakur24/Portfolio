@@ -8,6 +8,16 @@ export const info = {
 
 export const projects = [
   {
+    title: "BAG",
+    description:
+      "This project uses a third-party API called restcountries to fetch countries that allow users to explore and save any country to MongoDB. It also uses a RESTful API (CRUD Operation).",
+    image: require("../assets/bag.jpg"),
+    tags: ["MongoDB", "ReactJS", "Express", "NodeJS", "Mantine UI"],
+    source: "https://github.com/Abdulshakur24/bag-challenge",
+    visit: "https://bag-2022.herokuapp.com/",
+    id: 0,
+  },
+  {
     title: "Audiophile",
     description:
       "This is a multi-page website that focuses on audio gear. It is made with PostgresSQL for the backend and can easily be scaled for more products.",
@@ -36,26 +46,6 @@ export const projects = [
     source: "https://github.com/Abdulshakur24/reddits-client",
     visit: "https://reddit-clients.netlify.app/",
     id: 3,
-  },
-  {
-    title: "Real Estate",
-    description:
-      "A fully functional real estate web app uses an API that helps to query real estate in UAE.",
-    image: require("../assets/realtor.jpg"),
-    tags: ["ReactJS", "NextJS", "Rapid APIs"],
-    source: "https://github.com/Abdulshakur24/real-estate",
-    visit: "https://real-estate-rouge.vercel.app/",
-    id: 4,
-  },
-  {
-    title: "Blog App",
-    description:
-      "This Blog site allows you to post, edit, comment, save and view your blog posts.",
-    image: require("../assets/blog.jpg"),
-    tags: ["ReactJS", "NextJS", "Graphql"],
-    source: "https://github.com/Abdulshakur24/blog_app",
-    visit: "https://blog-app-bice.vercel.app/",
-    id: 5,
   },
 ];
 
