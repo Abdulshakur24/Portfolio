@@ -26,10 +26,10 @@ function SlideInWhenVisible({ children }) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: 0.5 }}
+      transition={{ duration: 0.5, delay: 0.25 }}
       variants={{
-        visible: { opacity: 1, x: 0, y: 0 },
-        hidden: { opacity: 0, x: 0, y: -100 },
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 },
       }}
     >
       {children}
@@ -80,7 +80,7 @@ const Projects = () => {
       <SectionTitle
         initial={{ y: 0, x: -1000, opacity: 0 }}
         animate={{ y: 0, x: 0, opacity: 1 }}
-        transition={{ delay: 0.5 }}
+        transition={{ delay: 0.15 }}
       >
         Projects
       </SectionTitle>
