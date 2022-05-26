@@ -82,7 +82,7 @@ const Projects = () => {
         animate={{ y: 0, x: 0, opacity: 1 }}
         transition={{ delay: 0.15 }}
       >
-        Projects
+        Personal Projects
       </SectionTitle>
       <GridContainer>
         {projects.map((p, index) => {
