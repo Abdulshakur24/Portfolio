@@ -10,7 +10,7 @@ export const projects = [
   {
     title: "BAG",
     description:
-      "This project uses a third-party API called restcountries to fetch countries that allow users to explore and save any country to MongoDB. It also uses a RESTful API (CRUD Operation).",
+      "This project uses a third-party API called restcountries to fetch countries that allow users to explore and save any country to MongoDB (and my most complex by far).",
     image: require("../assets/bag.jpg"),
     tags: ["MongoDB", "ReactJS", "Express", "NodeJS", "Mantine UI"],
     source: "https://github.com/Abdulshakur24/bag-challenge",
@@ -30,7 +30,7 @@ export const projects = [
   {
     title: "Space Tourism",
     description:
-      "Created using React (and my most complex by far). I feel like I learned a hell of a lot working through it.",
+      "This is a challenging front-end project from Front-end Mentor. I was provided with Figma designs to transform them into a fully functional website.",
     image: require("../assets/space-tourism.jpg"),
     tags: ["ReactJS", "Styled components", "Framer motion"],
     source: "https://github.com/Abdulshakur24/space-tourism",
