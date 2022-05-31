@@ -23,8 +23,8 @@ export const projects = [
       "This is a multi-page website that focuses on audio gear. It is made with PostgresSQL for the backend and can easily be scaled for more products.",
     image: require("../assets/audiophile.jpg"),
     tags: ["ReactJS", "PostgreSQL", "NodeJS", "Express", "Passport JS"],
-    source: "https://github.com/Abdulshakur24/audiophile",
-    visit: "https://audiophile-by-ashakur.netlify.app/",
+    source: "https://github.com/Abdulshakur24/e-commerce",
+    visit: "https://audiophile-e-commerce.herokuapp.com/",
     id: 1,
   },
   {
