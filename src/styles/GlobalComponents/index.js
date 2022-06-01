@@ -44,7 +44,7 @@ export const Section = styled(motion.section)`
 
 export const SectionTitle = styled(motion.h2)`
   font-weight: 800;
-  font-size: ${(props) => (props.main ? "65px" : "56px")};
+  font-size: ${(props) => (props.main ? "65px" : "40px")};
   line-height: ${(props) => (props.main ? "72px" : "56px")};
   width: max-content;
   max-width: 100%;
