@@ -23,9 +23,8 @@ const Header = () => {
           opacity: opacity(scrollY, [0, 40], [1, 0.3]),
         }}
       >
-        <Link className="link" to="/">
-          <DiCssdeck size="3rem" /> <span>Portfolio</span>
-        </Link>
+        <DiCssdeck size="3rem" />
+        <p> Portfolio</p>
       </Div1>
       <Div2
         initial={{ y: 1000, x: 0, opacity: 0 }}
