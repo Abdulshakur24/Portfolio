@@ -3,7 +3,7 @@ import { SocialIcons } from "../components/Header/HeaderStyles";
 
 export const info = {
   purpose:
-    "I'm a self-taught MERN/PERN Stack developer. I am currently exploring some of the advanced/guru projects.",
+    "I am a self-taught MERN/PERN Stack developer, currently exploring some of the advanced/guru projects.",
 };
 
 export const projects = [
