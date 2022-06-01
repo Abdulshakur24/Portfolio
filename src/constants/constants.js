@@ -94,7 +94,7 @@ export const sociallinks = [
 
 export const technologies = {
   title:
-    "I've worked with a range a technologies in the web development world. From Front-end to Full-stack Engineer.",
+    "I have worked with a range of technologies in the web development world, from Front-end to Full-stack engineering.",
   frontEnd: "Experiece with <br/> React.js",
   backEnd:
     "Experience with Node, Express <br/> and Databases(PostgresSQL, MongoDB).",
@@ -103,7 +103,7 @@ export const technologies = {
 
 export const aboutMe = {
   title:
-    "My name is Abdulshakur, I love all things about front-end design/development and am looking for a job to take my passion to the next level!",
+    "My name is Abdulshakur; I love all things about front-end design/development and am looking for a job to take my passion to the next level!",
 };
 
 export const achievements = [{ number: 20, text: "Repositories" }];
