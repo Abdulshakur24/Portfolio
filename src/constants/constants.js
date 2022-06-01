@@ -3,7 +3,7 @@ import { SocialIcons } from "../components/Header/HeaderStyles";
 
 export const info = {
   purpose:
-    "I'm a self-taught MERN/PERN Stack developer. I am currently exploring some of the advanced/guru projects. I love all things about front-end design/development and am looking for a job to take my passion to the next level!",
+    "I'm a self-taught MERN/PERN Stack developer. I am currently exploring some of the advanced/guru projects.",
 };
 
 export const projects = [
@@ -103,7 +103,7 @@ export const technologies = {
 
 export const aboutMe = {
   title:
-    "My name is Abdulshakur, I am a Full-stack Engineer(PERN Stack). This portfolio represents a few things that inspire me about my works.",
+    "My name is Abdulshakur, I love all things about front-end design/development and am looking for a job to take my passion to the next level!",
 };
 
 export const achievements = [{ number: 20, text: "Repositories" }];
