@@ -25,9 +25,12 @@ export const Div1 = styled(motion.div)`
   flex-direction: row;
   align-content: center;
 
-  .link {
-    display: flex;
-    align-items: center;
+  svg {
+    min-width: 3rem;
+  }
+
+  p {
+    line-height: 30px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
