@@ -18,6 +18,7 @@ export const Container = styled(motion.div)`
     padding: 1rem;
   }
 `;
+
 export const Div1 = styled(motion.div)`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
@@ -33,15 +34,20 @@ export const Div1 = styled(motion.div)`
     grid-area: 1 / 1 / 2 / 3;
   }
 `;
+
 export const Div2 = styled(motion.div)`
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: 1 / 3 / 2 / 4;
   display: flex;
-  justify-content: space-around;
+  gap: 1.5rem;
+  justify-content: space-between;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
+    grid-area: 2 / 1 / 2 / 6;
+    max-width: 400px;
+    margin: 0 auto;
   }
 `;
+
 export const Div3 = styled(motion.div)`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
@@ -69,7 +75,6 @@ export const NavLink = styled(motion.p)`
   }
 `;
 
-/// DropDown Contact
 export const ContactDropDown = styled(motion.button)`
   border: none;
   display: flex;
@@ -114,7 +119,6 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
     width: 15px;
   }
 `;
-// Social Icons
 
 export const SocialIcons = styled.a`
   transition: 250ms ease;
