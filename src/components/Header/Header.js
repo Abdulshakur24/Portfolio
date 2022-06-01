@@ -43,32 +43,13 @@ const Header = () => {
           opacity: opacity(scrollY, [0, 40], [1, 0.3]),
         }}
       >
-        <Link
-          activeClass="active"
-          to="projects"
-          smooth={true}
-          duration={1000}
-          delay={0}
-        >
+        <Link activeClass="active" to="projects">
           <NavLink>Projects</NavLink>
         </Link>
-        <Link
-          activeClass="active"
-          to="tech"
-          smooth={true}
-          duration={1000}
-          delay={0}
-          as={<NavLink />}
-        >
+        <Link activeClass="active" to="tech" as={<NavLink />}>
           <NavLink>Technologies</NavLink>
         </Link>
-        <Link
-          activeClass="active"
-          to="about"
-          smooth={true}
-          duration={1000}
-          delay={0}
-        >
+        <Link activeClass="active" to="about">
           <NavLink>About</NavLink>
         </Link>
       </Div2>
