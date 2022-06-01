@@ -29,13 +29,7 @@ const Hero = () => {
             My Personal Portfolio
           </SectionTitle>
           <SectionText>{info.purpose}</SectionText>
-          <Link
-            activeClass="active"
-            to="contacts"
-            smooth={true}
-            duration={1000}
-            delay={0}
-          >
+          <Link to="contacts">
             <Button>Contact Me</Button>
           </Link>
         </LeftSection>
