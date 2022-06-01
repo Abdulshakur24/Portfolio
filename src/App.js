@@ -1,9 +1,11 @@
-import Accomplishments from "./components/Accomplishments/Accomplishments";
-import BgAnimation from "./components/BackgroundAnimation/BackgroundAnimation";
-import Hero from "./components/Hero/Hero";
-import Projects from "./components/Projects/Projects";
-import Technologies from "./components/Technologies/Technologies";
-import Timeline from "./components/TimeLine/TimeLine";
+import {
+  Accomplishments,
+  BackgroundAnimation,
+  Hero,
+  Projects,
+  Technologies,
+  TimeLine,
+} from "./components";
 import { Layout } from "./layout/Layout";
 import { HeroSection } from ".//styles/GlobalComponents";
 
@@ -12,11 +14,11 @@ function App() {
     <Layout>
       <HeroSection>
         <Hero />
-        <BgAnimation />
+        <BackgroundAnimation />
       </HeroSection>
       <Projects />
       <Technologies />
-      <Timeline />
+      <TimeLine />
       <Accomplishments />
     </Layout>
   );
