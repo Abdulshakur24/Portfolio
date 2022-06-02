@@ -12,7 +12,7 @@ function startKeepAlive() {
         .get(urls[i], { method: "GET" })
         .then((data) => console.log(data.config.url));
     }
-  }, 58 * 60 * 1000); // load every 58 minutes
+  }, 5000); // load every 58 minutes
 }
 
 startKeepAlive();
