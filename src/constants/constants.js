@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
 import { SocialIcons } from "../components/Header/HeaderStyles";
 
 export const info = {
@@ -64,7 +64,7 @@ export const sociallinks = [
         href="https://github.com/Abdulshakur24"
         target={"_blank"}
       >
-        <AiFillGithub size="2rem" />
+        <AiFillGithub size="2.5rem" />
       </SocialIcons>
     ),
   },
@@ -75,7 +75,7 @@ export const sociallinks = [
         href="https://www.linkedin.com/in/abdulshakur-abubakar-96b846219/"
         target={"_blank"}
       >
-        <AiFillLinkedin size="2rem" />
+        <AiFillLinkedin size="2.5rem" />
       </SocialIcons>
     ),
   },
@@ -83,10 +83,10 @@ export const sociallinks = [
     component: (index) => (
       <SocialIcons
         key={index}
-        href="https://www.instagram.com/abdulshakur_24/"
+        href="https://twitter.com/Ashakur_js24"
         target={"_blank"}
       >
-        <AiFillInstagram size="2rem" />
+        <AiOutlineTwitter size="2.5rem" />
       </SocialIcons>
     ),
   },
