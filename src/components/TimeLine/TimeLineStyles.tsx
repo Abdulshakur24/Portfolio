@@ -8,16 +8,14 @@ export const CarouselContainer = styled(motion.ul)`
   list-style: none;
   display: flex;
   justify-content: space-between;
-  /* overflow-x: hidden; */
-
   margin-left: 32px;
+
   &:first-of-type {
     margin-left: 0px;
   }
 
   margin-bottom: 80px;
 
-  //remove scrollbar
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
@@ -28,16 +26,18 @@ export const CarouselContainer = styled(motion.ul)`
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     touch-action: pan-x;
+    padding: 0 200px 0 0;
     justify-content: initial;
     margin-bottom: 8px;
   }
 `;
+
 export const CarouselMobileScrollNode = styled(motion.div)`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
-    min-width: ${({ final }) => (final ? `120%;` : `min-content`)};
   }
 `;
+
 export const CarouselItem = styled(motion.div)`
   background: #0f1624;
   border-radius: 3px;
@@ -58,26 +58,27 @@ export const CarouselItem = styled(motion.div)`
     overflow: visible;
     position: relative;
     height: fit-content;
-
-    ${(props) =>
-      props.active === props.index ? `opacity: 1` : `opacity: 0.5`};
   }
 `;
+
 export const CarouselItemTitle = styled(motion.h4)`
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.02em;
   display: flex;
-  /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
+  align-items: center;
+  justify-content: flex-start;
   background: linear-gradient(
     121.57deg,
-    #ffffff 10%,
-    rgba(255, 255, 255, 0.66) 30.15%
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 40.15%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px;
+  position: relative;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 20px;
@@ -90,21 +91,21 @@ export const CarouselItemTitle = styled(motion.h4)`
     line-height: 24px;
   }
 `;
+
 export const CarouselItemImg = styled(motion.svg)`
-  margin-left: 21px;
-  -webkit-mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0)
-  );
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   width: 100%;
+  position: absolute;
+  inset: 1rem;
+  transform: translateX(60px);
 
   @media ${(props) => props.theme.breakpoints.sm} {
     -webkit-mask-image: none;
-    margin-left: 16px;
     overflow: visible;
+    transform: translateX(40px);
   }
 `;
+
 export const CarouselItemText = styled(motion.p)`
   font-size: 14px;
   line-height: 22px;
@@ -122,38 +123,4 @@ export const CarouselItemText = styled(motion.p)`
     line-height: 16px;
     padding-right: 0;
   }
-`;
-export const CarouselButtons = styled(motion.div)`
-  width: 288px;
-
-  display: none;
-  visibility: hidden;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: flex;
-    visibility: visible;
-    margin-bottom: 48px;
-  }
-`;
-export const CarouselButton = styled(motion.button)`
-  box-sizing: border-box;
-  background: none;
-  padding: 4px;
-  border: none;
-  cursor: pointer;
-  margin-right: 4px;
-  opacity: ${(props) => (props.active === props.index ? `1` : `.33`)};
-  transform: ${(props) =>
-    props.active === props.index ? `scale(1.6)` : `scale(1)`};
-
-  &:focus {
-    outline: none;
-  }
-`;
-export const CarouselButtonDot = styled(motion.div)`
-  background-color: white;
-  border-radius: 10px;
-  margin: auto;
-  width: 3px;
-  height: 3px;
 `;
