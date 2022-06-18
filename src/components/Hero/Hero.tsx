@@ -1,12 +1,11 @@
-import React from "react";
-import { info } from "../../constants/constants";
+import { info } from "src/constants/constants";
 import { useViewportScroll, useTransform } from "framer-motion";
-import { SectionText, SectionTitle } from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
 import { Link } from "react-scroll";
+import { SectionText, SectionTitle } from "src/styles/GlobalComponents";
+import Button from "src/styles/GlobalComponents/Button";
+import { LeftSection } from "./HeroStyles";
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   const { scrollY } = useViewportScroll();
   const x = useTransform;
   const y = useTransform;
