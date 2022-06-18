@@ -24,7 +24,7 @@ export const projects: projectsProps = [
     image: require("../assets/bag.jpg"),
     tags: ["MongoDB", "ReactJS", "Express", "NodeJS", "Mantine UI"],
     source: "https://github.com/Abdulshakur24/bag-challenge",
-    visit: "https://explore-countries-2022/",
+    visit: "https://explore-countries-2022.herokuapp.com/",
     id: 0,
   },
   {
