@@ -1,11 +1,9 @@
-import React from "react";
-import { achievements } from "../../constants/constants";
-
+import { achievements } from "src/constants/constants";
 import {
   Section,
   SectionDivider,
   SectionTitle,
-} from "../../styles/GlobalComponents";
+} from "src/styles/GlobalComponents";
 import { Box, Boxes, BoxNum, BoxText } from "./AccomplishmentsStyles";
 
 const Acomplishments = () => (
