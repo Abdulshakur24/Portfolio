@@ -1,12 +1,10 @@
 import { motion, useViewportScroll, useTransform } from "framer-motion";
-
-import React from "react";
-
 import styled from "styled-components";
 
-const BackgroundAnimation = () => {
+const BackgroundAnimation = (): JSX.Element => {
   const { scrollY } = useViewportScroll();
   const y = useTransform(scrollY, [0, 100], [0, -100]);
+
   return (
     <Container
       style={{ y }}
