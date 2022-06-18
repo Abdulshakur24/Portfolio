@@ -1,6 +1,4 @@
-import React from "react";
-import { contacts, sociallinks } from "../../constants/constants";
-
+import { contacts, sociallinks } from "src/constants/constants";
 import {
   CompanyContainer,
   FooterWrapper,
@@ -13,7 +11,7 @@ import {
   SocialIconsContainer,
 } from "./FooterStyles";
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   return (
     <FooterWrapper id="contacts">
       <LinkList>
