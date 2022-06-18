@@ -26,7 +26,7 @@ export const CarouselContainer = styled(motion.ul)`
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     touch-action: pan-x;
-    padding: 0 200px 0 0;
+    padding: 0 500px 0 0;
     justify-content: initial;
     margin-bottom: 8px;
   }
