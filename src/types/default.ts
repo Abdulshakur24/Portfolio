@@ -38,7 +38,3 @@ export interface contactsProps {
   tel: string;
   email: string;
 }
-
-export interface BlogCardComponent {
-  p: {};
-}
