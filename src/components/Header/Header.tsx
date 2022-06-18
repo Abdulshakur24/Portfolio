@@ -1,12 +1,10 @@
-import React from "react";
 import { DiCssdeck } from "react-icons/di";
-import { sociallinks } from "../../constants/constants";
+import { sociallinks } from "src/constants/constants";
 import { Link } from "react-scroll";
-
 import { Container, Div1, Div2, Div3, NavLink } from "./HeaderStyles";
 import { useTransform, useViewportScroll } from "framer-motion";
 
-const Header = () => {
+function Header(): JSX.Element {
   const { scrollY } = useViewportScroll();
   const x = useTransform;
   const y = useTransform;
@@ -58,6 +56,6 @@ const Header = () => {
       </Div3>
     </Container>
   );
-};
+}
 
 export default Header;
