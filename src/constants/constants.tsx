@@ -1,12 +1,22 @@
 import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
 import { SocialIcons } from "../components/Header/HeaderStyles";
+import {
+  aboutMeProps,
+  achievementsProps,
+  contactsProps,
+  infoProps,
+  projectsProps,
+  socialLinksProps,
+  technologiesProps,
+  timeLineDataProps,
+} from "src/types/default";
 
-export const info = {
+export const info: infoProps = {
   purpose:
     "I am a self-taught MERN/PERN Stack developer, currently exploring some of the advanced/guru projects.",
 };
 
-export const projects = [
+export const projects: projectsProps = [
   {
     title: "BAG",
     description:
@@ -49,14 +59,14 @@ export const projects = [
   },
 ];
 
-export const TimeLineData = [
+export const TimeLineData: timeLineDataProps = [
   { year: 2019, text: "Started my Front-end career." },
   { year: 2020, text: "I decided to transit to Full-stack Engineer." },
   { year: 2021, text: "Started building ambigious projects." },
   { year: 2022, text: "Goals: Work as a freelancer, or remotely." },
 ];
 
-export const sociallinks = [
+export const sociallinks: socialLinksProps = [
   {
     component: (index) => (
       <SocialIcons
@@ -92,7 +102,7 @@ export const sociallinks = [
   },
 ];
 
-export const technologies = {
+export const technologies: technologiesProps = {
   title:
     "I have worked with a range of technologies in the web development world, from Front-end to Full-stack engineering.",
   frontEnd: "Experiece with <br/> React.js",
@@ -101,14 +111,16 @@ export const technologies = {
   uiOrux: "Basic knowledge in <br/> tools like Figma.",
 };
 
-export const aboutMe = {
+export const aboutMe: aboutMeProps = {
   title:
     "My name is Abdulshakur; I love all things about front-end design/development and am looking for a job to take my passion to the next level!",
 };
 
-export const achievements = [{ number: 20, text: "Repositories" }];
+export const achievements: achievementsProps = [
+  { number: 20, text: "Repositories" },
+];
 
-export const contacts = {
+export const contacts: contactsProps = {
   tel: "+254 707049885",
   email: "ashakur.js24@gmail.com",
 };
