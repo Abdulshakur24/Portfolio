@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Header, Footer } from "../components";
+import { useState } from "react";
+import { Header, Footer } from "src/components";
 import { Container, ResumeWrapper } from "./LayoutStyles";
 import { FiExternalLink } from "react-icons/fi";
 import { AnimatePresence } from "framer-motion";
 
-import resume from "../assets/ashakur-resume.pdf";
+import resume from "src/assets/ashakur-resume.pdf";
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children }: { children: JSX.Element }) => {
   const [visited, setVisited] = useState(false);
 
   return (
