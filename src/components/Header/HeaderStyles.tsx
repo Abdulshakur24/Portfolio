@@ -2,6 +2,21 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
+export const ProgressBar = styled(motion.div)`
+  position: fixed;
+  height: 4px;
+  inset: 0 0 auto 0;
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 8.77%,
+    rgba(255, 255, 255, 0.66) 100%
+  );
+  z-index: 500;
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 2.5px;
+  }
+`;
+
 export const Container = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(5, 1fr);

@@ -1,17 +1,38 @@
 import { DiCssdeck } from "react-icons/di";
 import { sociallinks } from "src/constants/constants";
 import { Link } from "react-scroll";
-import { Container, Div1, Div2, Div3, NavLink } from "./HeaderStyles";
+import {
+  Container,
+  Div1,
+  Div2,
+  Div3,
+  NavLink,
+  ProgressBar,
+} from "./HeaderStyles";
 import { useTransform, useViewportScroll } from "framer-motion";
+import { useEffect, useState } from "react";
 
 function Header(): JSX.Element {
-  const { scrollY } = useViewportScroll();
+  const { scrollY, scrollYProgress } = useViewportScroll();
   const x = useTransform;
   const y = useTransform;
   const opacity = useTransform;
 
+  const [currentProgress, setCurrentProgress] = useState<number>(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () =>
+      setCurrentProgress(scrollYProgress.get() * 100)
+    );
+  });
+
   return (
     <Container>
+      <ProgressBar
+        style={{
+          width: `${currentProgress}%`,
+        }}
+      />
       <Div1
         initial={{ y: 0, x: -1000, opacity: 0 }}
         animate={{ y: 0, x: 0, opacity: 1 }}
