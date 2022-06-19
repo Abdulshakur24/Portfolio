@@ -105,7 +105,7 @@ export const sociallinks: socialLinksProps = [
 export const technologies: technologiesProps = {
   title:
     "I have worked with a range of technologies in the web development world, from Front-end to Full-stack engineering.",
-  frontEnd: "Experiece with <br/> React.js",
+  frontEnd: "Experience with <br/> React.js",
   backEnd:
     "Experience with Node, Express <br/> and Databases(PostgresSQL, MongoDB).",
   uiOrux: "Basic knowledge in <br/> tools like Figma.",
