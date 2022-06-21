@@ -142,7 +142,6 @@ export const SecondaryBtn = styled(motion.button)`
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.33);
   box-sizing: border-box;
-  border-radius: 999px;
   padding: 16px 24px;
   font-weight: 600;
   font-size: 18px;
@@ -191,12 +190,20 @@ export const SecondaryBtn = styled(motion.button)`
 export const ButtonBack = styled(motion.div)`
   width: ${({ alt }) => (alt ? "150px" : "262px")};
   height: ${({ alt }) => (alt ? "52px" : "64px")};
-  border-radius: 50px;
   font-size: ${({ alt }) => (alt ? "20px" : "24px")};
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
+  --edge-size: 0.5em;
+  clip-path: polygon(
+    var(--edge-size) 0%,
+    100% 0,
+    100% calc(100% - var(--edge-size)),
+    calc(100% - var(--edge-size)) 100%,
+    0 100%,
+    0% var(--edge-size)
+  );
   margin: ${({ alt, form }) => (alt || form ? "0" : "0 0 80px")};
   color: #fff;
   background: ${({ alt }) =>
@@ -226,7 +233,6 @@ export const ButtonBack = styled(motion.div)`
 
 export const ButtonFront = styled(motion.button)`
   border: none;
-  border-radius: 50px;
   color: #fff;
   display: flex;
   position: absolute;
@@ -234,6 +240,15 @@ export const ButtonFront = styled(motion.button)`
   left: 0;
   width: 100%;
   height: 100%;
+  --edge-size: 0.5em;
+  clip-path: polygon(
+    var(--edge-size) 0%,
+    100% 0,
+    100% calc(100% - var(--edge-size)),
+    calc(100% - var(--edge-size)) 100%,
+    0 100%,
+    0% var(--edge-size)
+  );
   background: ${({ alt }) =>
     alt
       ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
