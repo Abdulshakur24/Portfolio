@@ -43,7 +43,6 @@ function Projects(): JSX.Element {
         initial={{ y: 0, x: -1000, opacity: 0 }}
         animate={{ y: 0, x: 0, opacity: 1 }}
         transition={{ delay: 0.3 }}
-        // divider="true"
       />
       <SectionTitle
         initial={{ y: 0, x: -1000, opacity: 0 }}
