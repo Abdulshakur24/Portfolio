@@ -87,8 +87,16 @@ export const ExternalLinks = styled.a`
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
   background: #26385c;
-  border-radius: 15px;
   transition: 0.5s;
+  --edge-size: 0.5em;
+  clip-path: polygon(
+    var(--edge-size) 0%,
+    100% 0,
+    100% calc(100% - var(--edge-size)),
+    calc(100% - var(--edge-size)) 100%,
+    0 100%,
+    0% var(--edge-size)
+  );
   &:hover {
     background: #1d2b4a;
   }
