@@ -195,7 +195,7 @@ export const ButtonBack = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  --edge-size: 0.5em;
+  --edge-size: 1em;
   clip-path: polygon(
     var(--edge-size) 0%,
     100% 0,
@@ -221,12 +221,14 @@ export const ButtonBack = styled(motion.div)`
     height: ${({ alt }) => (alt ? "52px" : "48px")};
     font-size: ${({ alt }) => (alt ? "20px" : "16px")};
     margin-bottom: ${({ alt }) => (alt ? "0" : "64px")};
+    --edge-size: 0.75em;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
     height: 32px;
     font-size: 14px;
+    --edge-size: 0.5em;
     margin-bottom: ${({ alt }) => (alt ? "0" : "32px")};
   }
 `;
