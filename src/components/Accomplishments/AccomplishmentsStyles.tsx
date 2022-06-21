@@ -25,21 +25,28 @@ export const Boxes = styled(motion.div)`
 
 export const Box = styled.div`
   background: #212d45;
-  border-radius: 12px;
+  --edge-size: 2em;
+  clip-path: polygon(
+    var(--edge-size) 0%,
+    100% 0,
+    100% calc(100% - var(--edge-size)),
+    calc(100% - var(--edge-size)) 100%,
+    0 100%,
+    0% var(--edge-size)
+  );
   height: 144px;
   padding: 24px;
-  @media ${(props) => props.theme.breakpoints.lg} {
-    height: 210px;
-  }
 
   @media ${(props) => props.theme.breakpoints.md} {
     height: 135px;
     padding: 16px;
+    --edge-size: 1.5em;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     height: 110px;
     padding: 12px;
+    --edge-size: 0.5em;
 
     &:nth-child(2n) {
       grid-row: 2;
