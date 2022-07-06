@@ -18,14 +18,24 @@ export const info: infoProps = {
 
 export const projects: projectsProps = [
   {
+    title: "Real Estate (Emirates)",
+    description:
+      "A real estate site with third-party API (Bayut API). End-users are able to explore, search, and filter queries!",
+    image: require("../assets/realtor.jpg"),
+    tags: ["NextJS", "ReactJS", "Chakra UI", "Framer Motion"],
+    source: "https://github.com/Abdulshakur24/real-estate",
+    visit: "https://real-estate-rouge.vercel.app/",
+    id: 0,
+  },
+  {
     title: "BAG",
     description:
-      "This project uses a third-party API called restcountries to fetch countries that allow users to explore and save any country to MongoDB (and my most complex by far).",
+      "This project uses a third-party API called restcountries to fetch countries that allow users to explore and save any country to MongoDB.",
     image: require("../assets/bag.jpg"),
     tags: ["MongoDB", "ReactJS", "Express", "NodeJS", "Mantine UI"],
     source: "https://github.com/Abdulshakur24/bag-challenge",
     visit: "https://explore-countries-2022.herokuapp.com/",
-    id: 0,
+    id: 1,
   },
   {
     title: "Audiophile",
@@ -35,7 +45,7 @@ export const projects: projectsProps = [
     tags: ["ReactJS", "PostgreSQL", "NodeJS", "Express", "Passport JS"],
     source: "https://github.com/Abdulshakur24/e-commerce",
     visit: "https://e-commerce-2022.herokuapp.com/",
-    id: 1,
+    id: 2,
   },
   {
     title: "Space Tourism",
@@ -45,7 +55,7 @@ export const projects: projectsProps = [
     tags: ["ReactJS", "Styled components", "Framer motion"],
     source: "https://github.com/Abdulshakur24/space-tourism",
     visit: "https://space-tourism-by-ashakur.netlify.app/",
-    id: 2,
+    id: 3,
   },
   {
     title: "Reddit Client",
@@ -55,7 +65,7 @@ export const projects: projectsProps = [
     tags: ["ReactJS", "React Redux"],
     source: "https://github.com/Abdulshakur24/reddits-client",
     visit: "https://reddit-clients.netlify.app/",
-    id: 3,
+    id: 4,
   },
 ];
 
