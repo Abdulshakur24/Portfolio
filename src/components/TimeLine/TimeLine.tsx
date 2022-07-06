@@ -52,11 +52,11 @@ const Timeline = (): JSX.Element => {
         }}
       >
         <>
-          {TimeLineData.map((item, index) => (
+          {TimeLineData.map(({ text, year }, index) => (
             <CarouselMobileScrollNode key={index}>
               <CarouselItem id={`carousel__item-${index}`}>
                 <CarouselItemTitle>
-                  {item.year}
+                  {year}
                   <CarouselItemImg
                     width="208"
                     height="6"
@@ -90,7 +90,7 @@ const Timeline = (): JSX.Element => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                <CarouselItemText>{item.text}</CarouselItemText>
+                <CarouselItemText>{text}</CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}

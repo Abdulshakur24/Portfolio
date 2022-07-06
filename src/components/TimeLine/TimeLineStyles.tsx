@@ -9,6 +9,7 @@ export const CarouselContainer = styled(motion.ul)`
   display: flex;
   justify-content: space-between;
   margin-left: 32px;
+  gap: 1rem;
 
   &:first-of-type {
     margin-left: 0px;
@@ -39,9 +40,18 @@ export const CarouselMobileScrollNode = styled(motion.div)`
 `;
 
 export const CarouselItem = styled(motion.div)`
-  background: #0f1624;
-  border-radius: 3px;
+  background-color: #212d45;
   max-width: 196px;
+  padding: 1rem;
+  --edge-size: 0.5em;
+  clip-path: polygon(
+    var(--edge-size) 0%,
+    100% 0,
+    100% calc(100% - var(--edge-size)),
+    calc(100% - var(--edge-size)) 100%,
+    0 100%,
+    0% var(--edge-size)
+  );
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 124px;
@@ -50,7 +60,6 @@ export const CarouselItem = styled(motion.div)`
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-left: 32px;
     min-width: 120px;
-    background: #0e131f;
     padding: 4px;
     align-content: start;
     scroll-snap-align: start;
