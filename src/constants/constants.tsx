@@ -1,5 +1,5 @@
 import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
-import { SocialIcons } from "../components/Header/HeaderStyles";
+import { SocialIcons } from "src/components/Header/HeaderStyles";
 import {
   aboutMeProps,
   achievementsProps,
@@ -18,54 +18,64 @@ export const info: infoProps = {
 
 export const projects: projectsProps = [
   {
+    title: "TikTok Clone",
+    description:
+      "A social media that allows you to post videos, comments, and like a post with google authentication!",
+    image: require("src/assets/tiktok-clone.jpg"),
+    tags: ["NextJS", "ReactJS", "SANITY", "Framer Motion"],
+    source: "https://github.com/Abdulshakur24/tiktok-clone",
+    visit: "https://tiktok-clone-azure.vercel.app",
+    id: 1,
+  },
+  {
     title: "Real Estate (Emirates)",
     description:
       "A real estate site with third-party API (Bayut API). End-users are able to explore, search, and filter queries!",
-    image: require("../assets/realtor.jpg"),
+    image: require("src/assets/realtor.jpg"),
     tags: ["NextJS", "ReactJS", "Chakra UI", "Framer Motion"],
     source: "https://github.com/Abdulshakur24/real-estate",
     visit: "https://real-estate-rouge.vercel.app/",
-    id: 0,
+    id: 2,
   },
   {
     title: "BAG",
     description:
       "This project uses a third-party API called restcountries to fetch countries that allow users to explore and save any country to MongoDB.",
-    image: require("../assets/bag.jpg"),
+    image: require("src/assets/bag.jpg"),
     tags: ["MongoDB", "ReactJS", "Express", "NodeJS", "Mantine UI"],
     source: "https://github.com/Abdulshakur24/bag-challenge",
     visit: "https://explore-countries-2022.herokuapp.com/",
-    id: 1,
+    id: 3,
   },
   {
     title: "Audiophile",
     description:
       "This is a multi-page website that focuses on audio gear. It is made with PostgresSQL for the backend and can easily be scaled for more products.",
-    image: require("../assets/audiophile.jpg"),
+    image: require("src/assets/audiophile.jpg"),
     tags: ["ReactJS", "PostgreSQL", "NodeJS", "Express", "Passport JS"],
     source: "https://github.com/Abdulshakur24/e-commerce",
     visit: "https://e-commerce-2022.herokuapp.com/",
-    id: 2,
+    id: 4,
   },
   {
     title: "Space Tourism",
     description:
       "This is a challenging front-end project from Front-end Mentor. I was provided with Figma designs to transform them into a fully functional website.",
-    image: require("../assets/space-tourism.jpg"),
+    image: require("src/assets/space-tourism.jpg"),
     tags: ["ReactJS", "Styled components", "Framer motion"],
     source: "https://github.com/Abdulshakur24/space-tourism",
     visit: "https://space-tourism-by-ashakur.netlify.app/",
-    id: 3,
+    id: 5,
   },
   {
     title: "Reddit Client",
     description:
       "Reddit is a read-only web app client for Reddit Smooth reading experience on web browser.",
-    image: require("../assets/reddit.jpg"),
+    image: require("src/assets/reddit.jpg"),
     tags: ["ReactJS", "React Redux"],
     source: "https://github.com/Abdulshakur24/reddits-client",
     visit: "https://reddit-clients.netlify.app/",
-    id: 4,
+    id: 6,
   },
 ];
 
