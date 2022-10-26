@@ -1,4 +1,4 @@
-import { info } from "src/constants/constants";
+import { info } from "src/personal/info";
 import { useViewportScroll, useTransform } from "framer-motion";
 import { Link } from "react-scroll";
 import { SectionText, SectionTitle } from "src/styles/GlobalComponents";

@@ -1,4 +1,4 @@
-import { contacts, sociallinks } from "src/constants/constants";
+import { contacts, sociallinks } from "src/personal/info";
 import {
   CompanyContainer,
   FooterWrapper,

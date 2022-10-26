@@ -1,5 +1,5 @@
 import { DiCssdeck } from "react-icons/di";
-import { sociallinks } from "src/constants/constants";
+import { sociallinks } from "src/personal/info";
 import { Link } from "react-scroll";
 import {
   Container,

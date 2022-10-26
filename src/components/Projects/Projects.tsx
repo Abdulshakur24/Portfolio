@@ -16,7 +16,7 @@ import {
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { projects } from "../../constants/constants";
+import { projects } from "../../personal/info";
 import { motion } from "framer-motion";
 
 function SlideInWhenVisible({ children }: { children: JSX.Element }) {

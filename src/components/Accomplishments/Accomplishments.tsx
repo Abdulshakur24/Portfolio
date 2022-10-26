@@ -1,4 +1,4 @@
-import { achievements } from "src/constants/constants";
+import { achievements } from "src/personal/info";
 import {
   Section,
   SectionDivider,

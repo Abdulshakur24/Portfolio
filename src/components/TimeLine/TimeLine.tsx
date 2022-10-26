@@ -12,7 +12,7 @@ import {
   SectionText,
   SectionTitle,
 } from "src/styles/GlobalComponents";
-import { aboutMe, TimeLineData } from "src/constants/constants";
+import { aboutMe, TimeLineData } from "src/personal/info";
 
 const Timeline = (): JSX.Element => {
   return (

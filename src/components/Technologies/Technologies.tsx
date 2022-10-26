@@ -1,5 +1,5 @@
 import { DiFirebase, DiReact, DiZend } from "react-icons/di";
-import { technologies } from "src/constants/constants";
+import { technologies } from "src/personal/info";
 import {
   Section,
   SectionDivider,
