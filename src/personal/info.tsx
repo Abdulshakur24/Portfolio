@@ -23,8 +23,8 @@ export const projects: projectsProps = [
       "A social media that allows you to post videos, comments, and like a post with google authentication!",
     image: require("src/assets/tiktok-clone.jpg"),
     tags: ["NextJS", "ReactJS", "SANITY", "Framer Motion"],
-    source: "https://github.com/Abdulshakur24/tiktok-clone",
-    visit: "https://tiktok-clone-azure.vercel.app",
+    source: "#",
+    visit: "#",
     id: 1,
   },
   {
@@ -33,8 +33,8 @@ export const projects: projectsProps = [
       "A real estate site with third-party API (Bayut API). End-users are able to explore, search, and filter queries!",
     image: require("src/assets/realtor.jpg"),
     tags: ["NextJS", "ReactJS", "Chakra UI", "Framer Motion"],
-    source: "https://github.com/Abdulshakur24/real-estate",
-    visit: "https://real-estate-rouge.vercel.app/",
+    source: "#",
+    visit: "#",
     id: 2,
   },
   {
@@ -43,8 +43,8 @@ export const projects: projectsProps = [
       "This project uses a third-party API called restcountries to fetch countries that allow users to explore and save any country to MongoDB.",
     image: require("src/assets/bag.jpg"),
     tags: ["MongoDB", "ReactJS", "Express", "NodeJS", "Mantine UI"],
-    source: "https://github.com/Abdulshakur24/bag-challenge",
-    visit: "https://explore-countries-2022.herokuapp.com/",
+    source: "#",
+    visit: "#",
     id: 3,
   },
   {
@@ -53,8 +53,8 @@ export const projects: projectsProps = [
       "This is a multi-page website that focuses on audio gear. It is made with PostgresSQL for the backend and can easily be scaled for more products.",
     image: require("src/assets/audiophile.jpg"),
     tags: ["ReactJS", "PostgreSQL", "NodeJS", "Express", "Passport JS"],
-    source: "https://github.com/Abdulshakur24/e-commerce",
-    visit: "https://e-commerce-2022.herokuapp.com/",
+    source: "#",
+    visit: "#",
     id: 4,
   },
   {
@@ -63,8 +63,8 @@ export const projects: projectsProps = [
       "This is a challenging front-end project from Front-end Mentor. I was provided with Figma designs to transform them into a fully functional website.",
     image: require("src/assets/space-tourism.jpg"),
     tags: ["ReactJS", "Styled components", "Framer motion"],
-    source: "https://github.com/Abdulshakur24/space-tourism",
-    visit: "https://space-tourism-by-ashakur.netlify.app/",
+    source: "#",
+    visit: "#",
     id: 5,
   },
   {
@@ -73,17 +73,19 @@ export const projects: projectsProps = [
       "Reddit is a read-only web app client for Reddit Smooth reading experience on web browser.",
     image: require("src/assets/reddit.jpg"),
     tags: ["ReactJS", "React Redux"],
-    source: "https://github.com/Abdulshakur24/reddits-client",
-    visit: "https://reddit-clients.netlify.app/",
+    source: "#",
+    visit: "#",
     id: 6,
   },
 ];
 
 export const TimeLineData: timeLineDataProps = [
-  { year: 2019, text: "Started my Front-end career." },
-  { year: 2020, text: "I decided to transit to Full-stack Engineer." },
-  { year: 2021, text: "Started building ambigious projects." },
-  { year: 2022, text: "Goals: Work as a freelancer, or remotely." },
+  { year: 2019, text: "Began my front-end development journey." },
+  { year: 2020, text: "Expanded my skills towards full-stack development." },
+  { year: 2021, text: "Embarked on ambitious project development." },
+  { year: 2022, text: "Set goals for freelance or remote work opportunities." },
+  { year: 2023, text: "Returned to university for further education." },
+  { year: 2024, text: "Continuing academic studies." },
 ];
 
 export const sociallinks: socialLinksProps = [
