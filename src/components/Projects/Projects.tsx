@@ -18,6 +18,10 @@ import {
 } from "../../styles/GlobalComponents";
 import { projects } from "../../personal/info";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { Cloudinary } from "@cloudinary/url-gen/index";
+import { AdvancedVideo } from "@cloudinary/react";
+import { quality } from "@cloudinary/url-gen/actions/delivery";
 
 function SlideInWhenVisible({ children }: { children: JSX.Element }) {
   return (
@@ -49,11 +53,20 @@ function Projects(): JSX.Element {
         animate={{ y: 0, x: 0, opacity: 1 }}
         transition={{ delay: 0.15 }}
       >
-        Personal Projects
+        Our Projects
       </SectionTitle>
       <GridContainer>
         {projects.map(
-          ({ id, title, image, tags, description, visit, source }) => {
+          ({
+            id,
+            title,
+            image,
+            tags,
+            description,
+            visit,
+            source,
+            videoCode,
+          }) => {
             return (
               <BlogCardComponent
                 key={id}
@@ -61,6 +74,7 @@ function Projects(): JSX.Element {
                 title={title}
                 image={image}
                 tags={tags}
+                videoCode={videoCode}
                 description={description}
                 visit={visit}
                 source={source}
@@ -78,6 +92,7 @@ function BlogCardComponent({
   image,
   tags,
   description,
+  videoCode,
   visit,
   source,
 }: {
@@ -85,14 +100,38 @@ function BlogCardComponent({
   description: string;
   image: string;
   tags: string[];
+  videoCode: string;
   source: string;
   visit: string;
   id: number;
 }): JSX.Element {
+  const [onHover, setOnHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setOnHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setOnHover(false);
+  };
+
   return (
     <SlideInWhenVisible>
-      <BlogCard>
-        <Img src={image} alt={title} />
+      <BlogCard onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="h-[224.89px] relative">
+          <Video image={image} videoCode={videoCode} />
+          <Img
+            className={`absolute inset-0 object-fit ${onHover ? "hidden" : ""}`}
+            src={image}
+            alt={title}
+          />
+          {/* {!viewed && (
+            <p className=" absolute -top-12 z-50 right-0 left-0 ml-auto mr-auto animate-wobble ">
+              Hover Me!
+            </p>
+          )} */}
+        </div>
+
         <TitleContent>
           <HeaderThree>{title}</HeaderThree>
           <Hr />
@@ -107,11 +146,40 @@ function BlogCardComponent({
           </TagList>
         </div>
         <UtilityList>
-          <ExternalLinks href={visit}>Visit</ExternalLinks>
-          <ExternalLinks href={source}>Source</ExternalLinks>
+          <ExternalLinks target="_blank" href={visit}>
+            Visit
+          </ExternalLinks>
+          <ExternalLinks target="_blank" href={source}>
+            Source
+          </ExternalLinks>
         </UtilityList>
       </BlogCard>
     </SlideInWhenVisible>
+  );
+}
+
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: "dabxjpjk8",
+  },
+});
+
+function Video({ videoCode, image }: { videoCode: string; image: string }) {
+  return (
+    <AdvancedVideo
+      controls
+      loop
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        objectPosition: "center",
+      }}
+      muted={false}
+      playsInline
+      preload={image}
+      cldVid={cld.video(videoCode).delivery(quality("auto:best"))}
+    />
   );
 }
 
