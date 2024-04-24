@@ -84,10 +84,12 @@ export const projects: projectsProps = [
 ];
 
 export const TimeLineData: timeLineDataProps = [
-  { year: 2019, text: "Started my Front-end career." },
-  { year: 2020, text: "I decided to transit to Full-stack Engineer." },
-  { year: 2021, text: "Started building ambigious projects." },
-  { year: 2022, text: "Goals: Work as a freelancer, or remotely." },
+  { year: 2019, text: "Began my front-end development journey." },
+  { year: 2020, text: "Expanded my skills towards full-stack development." },
+  { year: 2021, text: "Embarked on ambitious project development." },
+  { year: 2022, text: "Set goals for freelance or remote work opportunities." },
+  { year: 2023, text: "Returned to university for further education." },
+  { year: 2024, text: "Continuing academic studies." },
 ];
 
 export const sociallinks: socialLinksProps = [
