@@ -9,16 +9,20 @@ export const Img = styled.img`
 `;
 
 export const GridContainer = styled.section`
-  display: grid;
-  grid-template: 1fr / repeat(auto-fill, minmax(400px, 1fr));
-  padding: 3rem;
-  place-items: center;
-  column-gap: 2rem;
-  row-gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template: 1fr / repeat(auto-fill, minmax(400px, 1fr)); */
+  padding: 3rem 0;
+  justify-content: center;
+  /* place-items: center; */
+  gap: 7rem;
+  /* column-gap: 2rem; */
+  /* row-gap: 3rem; */
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
+    gap: 2rem;
     flex-direction: column;
-    padding: 2rem;
+    /* padding: 2rem; */
   }
 `;
 export const BlogCard = styled(motion.div)`

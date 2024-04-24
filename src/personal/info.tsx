@@ -18,6 +18,17 @@ export const info: infoProps = {
 
 export const projects: projectsProps = [
   {
+    title: "Brain Bot",
+    description:
+      "BrainBot is a Learning Management System (LMS) that seamlessly integrates the power of ChatGPT (API) to enhance the learning experience.",
+    image: new URL("../assets/preview.png", import.meta.url).href,
+    tags: ["MySQL", "Express", "React", "NodeJS"],
+    videoCode: "brain-bot_ieos83",
+    source: "https://github.com/Abdulshakur24/brain-bot",
+    visit: "",
+    id: 0,
+  },
+  {
     title: "TikTok Clone",
     description:
       "Experience the thrill of short-form video with our TikTok Clone. Post, comment, and like with Google authentication, built on NextJS and ReactJS.",
