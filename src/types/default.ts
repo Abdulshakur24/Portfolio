@@ -8,7 +8,7 @@ export type projectsProps = {
   image: string;
   tags: string[];
   videoCode: string;
-  source: string;
+  source?: string;
   visit: string;
   id: number;
 }[];
