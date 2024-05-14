@@ -86,6 +86,26 @@ export const UtilityList = styled.ul`
   padding: 2.5rem 0;
 `;
 
+export const PrivateBlock = styled.div`
+  color: #d4c0c0;
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  background: #26385c;
+  transition: 0.5s;
+  --edge-size: 0.5em;
+  clip-path: polygon(
+    var(--edge-size) 0%,
+    100% 0,
+    100% calc(100% - var(--edge-size)),
+    calc(100% - var(--edge-size)) 100%,
+    0 100%,
+    0% var(--edge-size)
+  );
+  &:hover {
+    background: #1d2b4a;
+  }
+`;
+
 export const ExternalLinks = styled.a`
   color: #d4c0c0;
   font-size: 1.6rem;
