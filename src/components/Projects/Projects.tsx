@@ -10,6 +10,7 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  PrivateBlock,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -53,7 +54,7 @@ function Projects(): JSX.Element {
         animate={{ y: 0, x: 0, opacity: 1 }}
         transition={{ delay: 0.15 }}
       >
-        Our Projects
+        Personal Projects
       </SectionTitle>
       <GridContainer>
         {projects.map(
@@ -101,7 +102,7 @@ function BlogCardComponent({
   image: string;
   tags: string[];
   videoCode: string;
-  source: string;
+  source?: string;
   visit: string;
   id: number;
 }): JSX.Element {
@@ -149,9 +150,13 @@ function BlogCardComponent({
           <ExternalLinks target="_blank" href={visit}>
             Visit
           </ExternalLinks>
-          <ExternalLinks target="_blank" href={source}>
-            Source
-          </ExternalLinks>
+          {source ? (
+            <ExternalLinks target="_blank" href={source}>
+              Source
+            </ExternalLinks>
+          ) : (
+            <PrivateBlock>Private</PrivateBlock>
+          )}
         </UtilityList>
       </BlogCard>
     </SlideInWhenVisible>
