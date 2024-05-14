@@ -24,8 +24,8 @@ export const projects: projectsProps = [
     image: new URL("../assets/preview.png", import.meta.url).href,
     tags: ["MySQL", "Express", "React", "NodeJS"],
     videoCode: "brain-bot_ieos83",
-    source: "https://github.com/Abdulshakur24/brain-bot",
-    visit: "",
+    // source: "https://github.com/Abdulshakur24/brain-bot",
+    visit: "https://brain-bot.online",
     id: 0,
   },
   {
