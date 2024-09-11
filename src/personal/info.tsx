@@ -12,8 +12,7 @@ import {
 } from "src/types/default";
 
 export const info: infoProps = {
-  purpose:
-    "I am a self-taught MERN/PERN Stack developer, currently exploring some of the advanced/guru projects.",
+  purpose: "I'm a full-stack developer skilled in the MERN stack.",
 };
 
 export const projects: projectsProps = [
@@ -29,6 +28,17 @@ export const projects: projectsProps = [
     id: 0,
   },
   {
+    title: "TechBot",
+    description:
+      "TechBot is a MERN stack application with real-time communication, OpenAI API integration, and modern frontend tools like Redux and React Query.",
+    image: new URL("../assets/techbot.png", import.meta.url).href,
+    tags: ["MySQL", "Express", "React", "NodeJS"],
+    videoCode: "0911_i8xmvr",
+    // source: "https://github.com/Abdulshakur24/brain-bot",
+    visit: "https://techbot.online",
+    id: 1,
+  },
+  {
     title: "TikTok Clone",
     description:
       "Experience the thrill of short-form video with our TikTok Clone. Post, comment, and like with Google authentication, built on NextJS and ReactJS.",
@@ -37,7 +47,7 @@ export const projects: projectsProps = [
     videoCode: "tiktok-clone_bt7ood",
     source: "https://github.com/Abdulshakur24/tiktok-clone",
     visit: "https://tiktok-clone-by-ashakur.vercel.app/",
-    id: 1,
+    id: 2,
   },
   {
     title: "Real Estate (Emirates)",
@@ -48,18 +58,9 @@ export const projects: projectsProps = [
     videoCode: "realtor_bcuv0z",
     source: "https://github.com/Abdulshakur24/real-estate",
     visit: "https://real-estate-by-ashakur.vercel.app/",
-    id: 2,
+    id: 3,
   },
-  // {
-  //   title: "BAG",
-  //   description:
-  //     "This project uses a third-party API called restcountries to fetch countries that allow users to explore and save any country to MongoDB.",
-  //   image: new URL("../assets/bag.jpg", import.meta.url).href,
-  //   tags: ["MongoDB", "ReactJS", "Express", "NodeJS", "Mantine UI"],
-  //   source: "#",
-  //   visit: "#",
-  //   id: 3,
-  // },
+
   {
     title: "Audiophile",
     description:
@@ -82,16 +83,6 @@ export const projects: projectsProps = [
     visit: "https://space-tourism-by-ashakur.netlify.app/",
     id: 5,
   },
-  // {
-  //   title: "Reddit Client",
-  //   description:
-  //     "Reddit is a read-only web app client for Reddit Smooth reading experience on web browser.",
-  //   image: new URL("../assets/reddit.jpg", import.meta.url).href,
-  //   tags: ["ReactJS", "React Redux"],
-  //   source: "#",
-  //   visit: "#",
-  //   id: 6,
-  // },
 ];
 
 export const TimeLineData: timeLineDataProps = [
@@ -101,6 +92,7 @@ export const TimeLineData: timeLineDataProps = [
   { year: 2022, text: "Set goals for freelance or remote work opportunities." },
   { year: 2023, text: "Returned to university for further education." },
   { year: 2024, text: "Continuing academic studies." },
+  // { year: 2025, text: "Graduation" },
 ];
 
 export const sociallinks: socialLinksProps = [
