@@ -54,7 +54,7 @@ function Projects(): JSX.Element {
         animate={{ y: 0, x: 0, opacity: 1 }}
         transition={{ delay: 0.15 }}
       >
-        Personal Projects
+        Projects
       </SectionTitle>
       <GridContainer>
         {projects.map(
